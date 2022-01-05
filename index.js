@@ -3,7 +3,7 @@ const app = new Koa();
 
 app.use((ctx,next) => {
     if(ctx.url==="/"){
-    ctx.response.set("Content-Type","text/html; charset=utf-8");
+     ctx.response.set("Content-Type","text/html; charset=utf-8");
      ctx.body = '<h1>Index Sayfasına Hoşgeldiniz</h1>';
     }
     else{
